@@ -11,7 +11,7 @@ const Author: NextPage<AuthorInterface> = ({ params }) => {
     variables: { slug: authorSlug },
   });
   if (error) return <h1>error ...</h1>;
-  console.log(data);
+
   return <AuthorPage {...data?.author} loading={loading} />;
 };
 

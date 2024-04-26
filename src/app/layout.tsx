@@ -3,7 +3,6 @@ import "./globals.css";
 import { vazirMatn } from "@/helpers/fonts";
 import GraphQlLayout from "@/components/layouts/graphQlLayout";
 import Header from "@/components/shared/Header";
-import SiteLayout from "@/components/layouts/SiteLayout";
 import Footer from "@/components/shared/Footer";
 
 export default function RootLayout({

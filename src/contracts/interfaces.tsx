@@ -67,4 +67,25 @@ export interface BlogPostPropsInterface {
     url: string;
   };
   title: string;
+  slug: string;
+}
+
+export interface CommentsPropsInterface {
+  slug: string;
+}
+
+export interface commentInterface {
+  id: string;
+  name: string;
+  text: string;
+}
+
+export interface SendCommentFormPropsInterface {
+  slug: string;
+}
+
+export interface CommentFormInputs {
+  name: string;
+  email: string;
+  text: string;
 }

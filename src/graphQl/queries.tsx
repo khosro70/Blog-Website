@@ -75,3 +75,13 @@ export const GET_BLOG_INFO = gql`
     }
   }
 `;
+
+export const GET_POST_COMMENTS = gql`
+  query postComments($slug: String!) {
+    comments(where: { post: { slug: $slug } }) {
+      id
+      text
+      name
+    }
+  }
+`;
